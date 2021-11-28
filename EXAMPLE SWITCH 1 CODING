@@ -1,0 +1,33 @@
+package mySwitch;
+
+import java.util.Scanner;
+
+public class ExampleSwitch1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		int x ;
+		
+		System.out.println("The number of x :");
+			x = sc.nextInt();
+			
+		switch (x) 
+		{	case 1:
+				System.out.println("the number is 10");
+				break;
+				
+			case 2:
+				System.out.println("the number is 20");
+				break;
+				
+			case 3:
+				System.out.println("the number is 30");
+				break;
+				
+			default :
+				System.out.println("the number is not 10, 20 and 30");
+		}
+		
+		sc.close();
