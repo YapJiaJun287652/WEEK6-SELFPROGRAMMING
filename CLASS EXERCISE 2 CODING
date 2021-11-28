@@ -1,0 +1,37 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class ClassExercise {
+
+	public static void main(String[] args) {
+		
+		Scanner obj = new Scanner (System.in);
+		
+		String subject1 ,subject2;
+		
+		System.out.println("Please enter the subject for math:");
+		subject1 = obj.nextLine();
+		
+		System.out.println("Please enter the subject for english:");
+		subject2 = obj.nextLine();
+		
+		System.out.println("Please enter the mark for math:");
+		int mark = obj.nextInt();
+		
+		System.out.println("Please enter the mark for english:");
+		int mark1 = obj.nextInt();
+		
+		if ((mark1 >= 50) && (mark >= 50))
+		{System.out.println("passed");
+		 	}
+		
+		else {
+			System.out.println("fail");
+		}
+		
+		if (mark > mark1)
+		{ System.out.println("math is higher than english"); }
+		
+		else
+		{ System.out.println("english is higher than math"); }
