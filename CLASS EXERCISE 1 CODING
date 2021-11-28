@@ -1,0 +1,47 @@
+package mySwitch;
+
+import java.util.Scanner;
+
+public class ClassExercise {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Enter the mark :");
+		int mark = sc.nextInt();
+		
+		switch (mark/10) {
+		
+		case 10 :
+		case 9 :
+			System.out.println("Excellent : Grade A");
+			break;
+			
+		case 8 :
+			System.out.println("Very Good : Grade B");
+			break;
+			
+		case 7 :
+			System.out.println("Good : Grade C");
+			break;
+			
+		case 6 :
+			System.out.println("Good : Grade D");
+			break;
+			
+		case 5 :
+			System.out.println("Good : Grade E");
+			break;
+			
+		case 4 :
+			System.out.println("Just Passed : Grade F");
+			break;
+			
+		default :
+			System.out.println("FAILED!");
+			break;
+			
+		}
+		
+		sc.close();
